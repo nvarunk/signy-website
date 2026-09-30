@@ -234,3 +234,56 @@ h2 span { color:var(--blue); }
   transition:opacity .8s ease;
 }
 .category-slideshow .category-slide.active { opacity:1; }
+
+
+/* Amazon Brand Store CTA */
+.amazon-nav-btn {
+  color: #111 !important;
+  background: #f5b63d;
+  border-radius: 999px;
+  padding: 11px 17px !important;
+  margin-left: -10px;
+  transition: transform .2s ease, box-shadow .2s ease, background .2s ease;
+  white-space: nowrap;
+}
+.amazon-nav-btn::after { display:none !important; }
+.amazon-nav-btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 8px 20px rgba(0,0,0,.10);
+  background: #f8c45a;
+}
+.btn-amazon {
+  background: #f5b63d;
+  color: #171717;
+}
+.btn-amazon:hover { background: #f8c45a; color:#171717; }
+.amazon-section { padding-top: 0; }
+.amazon-box {
+  background: #f7f4ed;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 48px 55px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:35px;
+}
+.amazon-copy { max-width: 700px; }
+.amazon-copy h2 { margin: 10px 0 10px; font-size: clamp(32px, 4vw, 50px); }
+.amazon-copy p { margin:0; color:var(--muted); font-size:17px; max-width:650px; }
+.btn-amazon-large {
+  background:#171717;
+  color:#fff;
+  flex:0 0 auto;
+}
+.btn-amazon-large:hover { background:#2b2b2b; color:#fff; }
+.footer-amazon { font-weight:700; }
+@media (max-width: 900px) {
+  .amazon-nav-btn { margin-left:0; }
+  .amazon-box { display:block; padding:38px 32px; }
+  .btn-amazon-large { display:inline-flex; margin-top:25px; }
+}
+@media (max-width: 700px) {
+  .amazon-nav-btn { border-radius:0; background:transparent; padding:14px 5px !important; margin:0; }
+  .amazon-box { padding:32px 24px; }
+}
