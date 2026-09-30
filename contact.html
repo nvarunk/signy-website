@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact SIGNY International.">
+  <title>Contact Us | SIGNY</title>
+  <link rel="icon" type="image/png" href="images/signy-logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="canonical" href="https://www.signyinternational.com/contact.html">
+</head>
+<body>
+<header class="site-header">
+  <div class="container nav-wrap">
+    <a class="brand" href="index.html"><img src="images/signy-logo.png" alt="SIGNY logo"></a>
+    <button class="menu-toggle" aria-label="Open menu" aria-expanded="false">☰</button>
+    <nav class="nav"><a href="index.html">Home</a><a href="about.html">About Us</a><a class="active" href="contact.html">Contact Us</a></nav>
+  </div>
+</header>
+
+<main>
+  <section class="page-hero">
+    <div class="container narrow">
+      <span class="eyebrow">CONTACT SIGNY</span>
+      <h1>Let's talk.</h1>
+      <p>Questions, partnerships, products or simply want to say hello? Send us a message.</p>
+    </div>
+  </section>
+
+  <section class="section contact-section">
+    <div class="container contact-grid">
+      <div class="contact-info">
+        <span class="eyebrow">GET IN TOUCH</span>
+        <h2>We'd love to hear from you.</h2>
+        <p>Use the form or reach us directly through the details below.</p>
+
+        <div class="contact-detail">
+          <span>Email</span>
+          <a href="mailto:info@signyinternational.com">info@signyinternational.com</a>
+        </div>
+        <div class="contact-detail">
+          <span>Phone</span>
+          <a href="tel:+916362861825">063628 61825</a>
+        </div>
+        <div class="contact-detail">
+          <span>Address</span>
+          <p>No 11, 3rd Floor, 8th Cross Rd, Indira Nagar II Stage, Stage 1,<br>Indiranagar, Bengaluru, Karnataka 560038</p>
+        </div>
+        <div class="contact-detail">
+          <span>Website</span>
+          <a href="https://www.signyinternational.com" target="_blank" rel="noopener">www.signyinternational.com</a>
+        </div>
+      </div>
+
+      <form class="contact-form" id="contactForm">
+        <label>Name<input type="text" name="name" required placeholder="Your name"></label>
+        <label>Email<input type="email" name="email" required placeholder="you@example.com"></label>
+        <label>Subject<input type="text" name="subject" placeholder="How can we help?"></label>
+        <label>Message<textarea name="message" rows="6" required placeholder="Write your message..."></textarea></label>
+        <button class="btn btn-primary" type="submit">Send Message</button>
+        <p class="form-note">This static version opens your email app to send the message.</p>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container footer-grid">
+    <div><img src="images/signy-logo.png" alt="SIGNY" class="footer-logo"><p>Premium products. Delivered.</p></div>
+    <div class="footer-links"><a href="index.html">Home</a><a href="about.html">About Us</a><a href="contact.html">Contact Us</a></div>
+    <div class="footer-copy">© <span id="year"></span> SIGNY International. All rights reserved.</div>
+  </div>
+</footer>
+<script src="js/script.js"></script>
+</body>
+</html>
